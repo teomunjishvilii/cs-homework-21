@@ -1,0 +1,67 @@
+#wraper {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+}
+.header-element {
+  height: 64px;
+}
+.header-block {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 2s;
+}
+.header-block.headerActive {
+  background-color: blueviolet;
+}
+
+body {
+  height: 3000px;
+}
+
+input:focus {
+  outline: none;
+}
+
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 0 auto;
+}
+
+#data ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#data ul li p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons button {
+  width: 160px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#loadprev.active,
+#loadmore.active {
+  transition: all 0.3s ease;
+}
+
+#loadprev.active:hover,
+#loadmore.active:hover {
+  background-color: grey;
+}
